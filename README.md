@@ -1,3 +1,5 @@
+![testing](https://travis-ci.com/lucasgcb/unitTesting.svg?branch=master)
+
 ## About Testing
 
 "Testing", in general programming terms, is the practice of writing code (separate from your actual application code) that invokes the code it tests to help determine if there are any blaring errors. 

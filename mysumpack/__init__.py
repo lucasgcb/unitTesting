@@ -1,0 +1,1 @@
+from mysumpack.sums import sumFunction

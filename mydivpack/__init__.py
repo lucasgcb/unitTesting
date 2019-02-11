@@ -1,0 +1,1 @@
+from mydivpack.divs import divFunction

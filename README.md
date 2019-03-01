@@ -1,7 +1,8 @@
 Circle CI: [![CircleCI](https://circleci.com/gh/lucasgcb/unitTesting.svg?style=svg)](https://circleci.com/gh/lucasgcb/unitTesting)
 Travis CI: ![testing](https://travis-ci.com/lucasgcb/unitTesting.svg?branch=master)
 
-[![Coverage Status](https://coveralls.io/repos/github/lucasgcb/unitTesting/badge.svg?branch=master)](https://coveralls.io/github/lucasgcb/unitTesting?branch=master)
+Coveralls: [![Coverage Status](https://coveralls.io/repos/github/lucasgcb/unitTesting/badge.svg?branch=master)](https://coveralls.io/github/lucasgcb/unitTesting?branch=master)
+Code Conv: [![codecov](https://codecov.io/gh/lucasgcb/unitTesting/branch/master/graph/badge.svg)](https://codecov.io/gh/lucasgcb/unitTesting)
 ## About
 
 A simple unit test suite for some basic functions.
@@ -14,7 +15,10 @@ The tests may be run locally using `python -m pytest`.
 
 To automate this, Continuous Integration platforms such as [Circle CI](https://circleci.com/) and [Travis CI](https://travis-ci.org/) offers cloud environments for observing this repository and running the tests.
 
-[Coveralls](https://coveralls.io/) is a tool that lets us know how much of our code is Covered for tests. 
+[Coveralls](https://coveralls.io/) and [CodeConv](https://codecov.io/) are services that lets us know how much of our code is Covered for tests. 
+
+
+
 
 
 ## About Testing

@@ -7,15 +7,34 @@
 
 _A simple unit test suite for some basic functions._
 
-[mydivpack](https://github.com/lucasgcb/unitTesting/tree/master/mydivpack) and [mysumpack](https://github.com/lucasgcb/unitTesting/tree/master/mysumpack) contain some generic code for adding and dividing lists of numbers. These can be used for anything.
+### About code in this repo:
 
-[tests](https://github.com/lucasgcb/unitTesting/tree/master/tests) have a few _unit test_ cases for the generic code in this repository. It is clear that in computing, a certain input will always have a certain output, so the `pytest`suite will run the generic code against defined cases for these inputs awaiting a certain output or convergence of such an output. If the results deviate from what is expected, then the code is acting in an unexpected way and is thereby failing the build test.
+- Contains some generic code for adding and dividing lists of numbers. 
+  - [mydivpack](https://github.com/lucasgcb/unitTesting/tree/master/mydivpack) and [mysumpack](https://github.com/lucasgcb/unitTesting/tree/master/mysumpack) 
+- These could have been anything else.
 
-The tests may be run locally using `python -m pytest`.
+---
 
-To automate this, Continuous Integration (CI) platforms such as [Circle CI](https://circleci.com/) and [Travis CI](https://travis-ci.org/) offers cloud environments for observing this repository and running the tests. FOr these sevices, we have the configuration files: [.travis.yml](https://github.com/lucasgcb/unitTesting/blob/master/.travis.yml) for travis and [.circleci/config.yml](https://github.com/lucasgcb/unitTesting/blob/master/.circleci/config.yml) for circleci.
+### About tests:
 
-[Coveralls](https://coveralls.io/) and [CodeConv](https://codecov.io/) are services that lets us know how much of our code is Covered for tests. Within the CI configuration, we have defined steps for generating test reports and uploading them. Circle CI uploads a report to CodeConv, while Travis reports to coveralls.
+- [tests](https://github.com/lucasgcb/unitTesting/tree/master/tests) have a few _unit test_ cases for the generic code in this repository. 
+  - It is clear that in computing, a certain input will always have a certain output
+  - The `pytest`suite will run the generic code against defined cases for these inputs awaiting a certain output or convergence of such an output. 
+  - If the results deviate from what is expected, then the code is acting in an unexpected way and is thereby failing the build test.
+
+    -The tests may be run locally using `python -m pytest`.
+
+
+---
+
+### About automation:
+- Services for observing this repository and running the tests. 
+- Continuous Integration (CI) platforms such as [Circle CI](https://circleci.com/) and [Travis CI](https://travis-ci.org/) 
+  - For these sevices, we have the configuration files: [.travis.yml](https://github.com/lucasgcb/unitTesting/blob/master/.travis.yml) for travis and [.circleci/config.yml](https://github.com/lucasgcb/unitTesting/blob/master/.circleci/config.yml) for circleci.
+
+- [Coveralls](https://coveralls.io/) and [CodeConv](https://codecov.io/) are services that lets us know how much of our code is Covered for tests. 
+  - Within the CI services configuration, we have defined steps for generating test reports and uploading them. 
+  - Circle CI uploads a report to CodeConv, while Travis reports to coveralls.
 
 
 

@@ -13,9 +13,9 @@ _A simple unit test suite for some basic functions._
 
 The tests may be run locally using `python -m pytest`.
 
-To automate this, Continuous Integration platforms such as [Circle CI](https://circleci.com/) and [Travis CI](https://travis-ci.org/) offers cloud environments for observing this repository and running the tests.
+To automate this, Continuous Integration (CI) platforms such as [Circle CI](https://circleci.com/) and [Travis CI](https://travis-ci.org/) offers cloud environments for observing this repository and running the tests. FOr these sevices, we have the configuration files: [.travis.yml](https://github.com/lucasgcb/unitTesting/blob/master/.travis.yml) for travis and [.circleci/config.yml](https://github.com/lucasgcb/unitTesting/blob/master/.circleci/config.yml) for circleci.
 
-[Coveralls](https://coveralls.io/) and [CodeConv](https://codecov.io/) are services that lets us know how much of our code is Covered for tests. 
+[Coveralls](https://coveralls.io/) and [CodeConv](https://codecov.io/) are services that lets us know how much of our code is Covered for tests. Within the CI configuration, we have defined steps for generating test reports and uploading them. Circle CI uploads a report to CodeConv, while Travis reports to coveralls.
 
 
 

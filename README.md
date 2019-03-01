@@ -18,7 +18,7 @@ _A simple unit test suite for some basic functions._
 
 ### About tests:
 
-- [tests](https://github.com/lucasgcb/unitTesting/tree/master/tests) have a few _unit test_ cases for the generic code in this repository. 
+- [tests/](https://github.com/lucasgcb/unitTesting/tree/master/tests) is a folder containing a few _unit test_ cases for the generic code in this repository. 
   - Broken down to smallest methods in the codebase that everything builds on top of
   - It is clear that in computing, a certain input will always have a certain output
   - The `pytest`suite will run the generic code against defined cases for these inputs awaiting a certain output or convergence of such an output. 

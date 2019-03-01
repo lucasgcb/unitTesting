@@ -1,7 +1,7 @@
 def sumFunction(arg):
     total = 0
     for val in arg:
-        total += val+1
+        total += val
     return total
 
 

@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/lucasgcb/unitTesting.svg?style=svg)](https://circleci.com/gh/lucasgcb/unitTesting)
 ![testing](https://travis-ci.com/lucasgcb/unitTesting.svg?branch=master)
 
 ## About Testing

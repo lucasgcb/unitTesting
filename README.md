@@ -1,5 +1,5 @@
 Circle CI: [![CircleCI](https://circleci.com/gh/lucasgcb/unitTesting.svg?style=svg)](https://circleci.com/gh/lucasgcb/unitTesting)
-Travis CI: ![testing](https://travis-ci.com/lucasgcb/unitTesting.svg?branch=master)
+Travis CI: [![Build Status](https://travis-ci.org/lucasgcb/unitTesting.svg?branch=master)](https://travis-ci.org/lucasgcb/unitTesting)
 
 Coveralls: [![Coverage Status](https://coveralls.io/repos/github/lucasgcb/unitTesting/badge.svg?branch=master)](https://coveralls.io/github/lucasgcb/unitTesting?branch=master)
 Code Conv: [![codecov](https://codecov.io/gh/lucasgcb/unitTesting/branch/master/graph/badge.svg)](https://codecov.io/gh/lucasgcb/unitTesting)
@@ -9,7 +9,7 @@ A simple unit test suite for some basic functions.
 
 [mydivpack](https://github.com/lucasgcb/unitTesting/tree/master/mydivpack) and [mysumpack](https://github.com/lucasgcb/unitTesting/tree/master/mysumpack) contain some generic code for adding and dividing lists of numbers. These can be used for anything.
 
-[tests](https://github.com/lucasgcb/unitTesting/tree/master/tests) have a few _unit test_ cases for the generic code. It is assumed that a value will always behave in a certain way, so the `pytest`suite will run the generic code against these defined cases. If the results deviate from what is expected, then the code is acting in an unexpected way and is thereby failing the build test.
+[tests](https://github.com/lucasgcb/unitTesting/tree/master/tests) have a few _unit test_ cases for the generic code in this repository. It is clear that in computing, a certain input will always have a certain output, so the `pytest`suite will run the generic code against defined cases for these inputs awaiting a certain output or convergence of such an output. If the results deviate from what is expected, then the code is acting in an unexpected way and is thereby failing the build test.
 
 The tests may be run locally using `python -m pytest`.
 

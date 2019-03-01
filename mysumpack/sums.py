@@ -5,3 +5,5 @@ def sumFunction(arg):
     return total
 
 
+def untestedFunction():
+    print("kk eae men")

@@ -10,10 +10,10 @@ jobs:
           command: pip install pytest pytest-cov
       - run:
           name: Install Test Reporter
-          command: pip install codecov
+          command: pip install codecov && codecov -t $CODECOV_TOKEN
       - run:
           name: Run test Suite
-          command: pytest --cov=./test-reports
+          command: pytest --cov=unittesting ./test-reports
       - store_test_results:
                 path: test-reports
       - store_artifacts:

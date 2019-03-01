@@ -1,21 +1,42 @@
-Circle CI: [![CircleCI](https://circleci.com/gh/lucasgcb/unitTesting.svg?style=svg)](https://circleci.com/gh/lucasgcb/unitTesting)
-Travis CI: ![testing](https://travis-ci.com/lucasgcb/unitTesting.svg?branch=master)
+**Circle CI**: [![CircleCI](https://circleci.com/gh/lucasgcb/unitTesting.svg?style=svg)](https://circleci.com/gh/lucasgcb/unitTesting)
+**Travis CI**: [![Build Status](https://travis-ci.org/lucasgcb/unitTesting.svg?branch=master)](https://travis-ci.org/lucasgcb/unitTesting)
 
-Coveralls: [![Coverage Status](https://coveralls.io/repos/github/lucasgcb/unitTesting/badge.svg?branch=master)](https://coveralls.io/github/lucasgcb/unitTesting?branch=master)
-Code Conv: [![codecov](https://codecov.io/gh/lucasgcb/unitTesting/branch/master/graph/badge.svg)](https://codecov.io/gh/lucasgcb/unitTesting)
+**Coveralls**: [![Coverage Status](https://coveralls.io/repos/github/lucasgcb/unitTesting/badge.svg?branch=master)](https://coveralls.io/github/lucasgcb/unitTesting?branch=master)
+**Code Conv**: [![codecov](https://codecov.io/gh/lucasgcb/unitTesting/branch/master/graph/badge.svg)](https://codecov.io/gh/lucasgcb/unitTesting)
+
 ## About
 
-A simple unit test suite for some basic functions.
+_A simple unit test suite for some basic functions._
 
-[mydivpack](https://github.com/lucasgcb/unitTesting/tree/master/mydivpack) and [mysumpack](https://github.com/lucasgcb/unitTesting/tree/master/mysumpack) contain some generic code for adding and dividing lists of numbers. These can be used for anything.
+### About code in this repo:
 
-[tests](https://github.com/lucasgcb/unitTesting/tree/master/tests) have a few _unit test_ cases for the generic code. It is assumed that a value will always behave in a certain way, so the `pytest`suite will run the generic code against these defined cases. If the results deviate from what is expected, then the code is acting in an unexpected way and is thereby failing the build test.
+- Contains some generic code for adding and dividing lists of numbers. 
+  - [mydivpack](https://github.com/lucasgcb/unitTesting/tree/master/mydivpack) and [mysumpack](https://github.com/lucasgcb/unitTesting/tree/master/mysumpack) 
+- These could have been anything else.
 
-The tests may be run locally using `python -m pytest`.
+---
 
-To automate this, Continuous Integration platforms such as [Circle CI](https://circleci.com/) and [Travis CI](https://travis-ci.org/) offers cloud environments for observing this repository and running the tests.
+### About tests:
 
-[Coveralls](https://coveralls.io/) and [CodeConv](https://codecov.io/) are services that lets us know how much of our code is Covered for tests. 
+- [tests](https://github.com/lucasgcb/unitTesting/tree/master/tests) have a few _unit test_ cases for the generic code in this repository. 
+  - Broken down to smallest methods in the codebase that everything builds on top of
+  - It is clear that in computing, a certain input will always have a certain output
+  - The `pytest`suite will run the generic code against defined cases for these inputs awaiting a certain output or convergence of such an output. 
+  - If the results deviate from what is expected, then the code is acting in an unexpected way and is thereby failing the build test.
+
+    -The tests may be run locally using `python -m pytest`.
+
+
+---
+
+### About automation:
+- Services for observing this repository and running the tests. 
+- Continuous Integration (CI) platforms such as [Circle CI](https://circleci.com/) and [Travis CI](https://travis-ci.org/) 
+  - For these sevices, we have the configuration files: [.travis.yml](https://github.com/lucasgcb/unitTesting/blob/master/.travis.yml) for travis and [.circleci/config.yml](https://github.com/lucasgcb/unitTesting/blob/master/.circleci/config.yml) for circleci.
+
+- [Coveralls](https://coveralls.io/) and [CodeConv](https://codecov.io/) are services that lets us know how much of our code is Covered for tests. 
+  - Within the CI services configuration, we have defined steps for generating test reports and uploading them. 
+  - Circle CI uploads a report to CodeConv, while Travis reports to coveralls.
 
 
 

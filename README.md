@@ -1,11 +1,11 @@
-Circle CI: [![CircleCI](https://circleci.com/gh/lucasgcb/unitTesting.svg?style=svg)](https://circleci.com/gh/lucasgcb/unitTesting)
-Travis CI: [![Build Status](https://travis-ci.org/lucasgcb/unitTesting.svg?branch=master)](https://travis-ci.org/lucasgcb/unitTesting)
+**Circle CI**: [![CircleCI](https://circleci.com/gh/lucasgcb/unitTesting.svg?style=svg)](https://circleci.com/gh/lucasgcb/unitTesting)
+**Travis CI**: [![Build Status](https://travis-ci.org/lucasgcb/unitTesting.svg?branch=master)](https://travis-ci.org/lucasgcb/unitTesting)
 
-Coveralls: [![Coverage Status](https://coveralls.io/repos/github/lucasgcb/unitTesting/badge.svg?branch=master)](https://coveralls.io/github/lucasgcb/unitTesting?branch=master)
-Code Conv: [![codecov](https://codecov.io/gh/lucasgcb/unitTesting/branch/master/graph/badge.svg)](https://codecov.io/gh/lucasgcb/unitTesting)
+**Coveralls**: [![Coverage Status](https://coveralls.io/repos/github/lucasgcb/unitTesting/badge.svg?branch=master)](https://coveralls.io/github/lucasgcb/unitTesting?branch=master)
+**Code Conv**: [![codecov](https://codecov.io/gh/lucasgcb/unitTesting/branch/master/graph/badge.svg)](https://codecov.io/gh/lucasgcb/unitTesting)
 ## About
 
-A simple unit test suite for some basic functions.
+_A simple unit test suite for some basic functions._
 
 [mydivpack](https://github.com/lucasgcb/unitTesting/tree/master/mydivpack) and [mysumpack](https://github.com/lucasgcb/unitTesting/tree/master/mysumpack) contain some generic code for adding and dividing lists of numbers. These can be used for anything.
 

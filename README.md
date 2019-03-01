@@ -1,5 +1,21 @@
-[![CircleCI](https://circleci.com/gh/lucasgcb/unitTesting.svg?style=svg)](https://circleci.com/gh/lucasgcb/unitTesting)
-![testing](https://travis-ci.com/lucasgcb/unitTesting.svg?branch=master)
+Circle CI: [![CircleCI](https://circleci.com/gh/lucasgcb/unitTesting.svg?style=svg)](https://circleci.com/gh/lucasgcb/unitTesting)
+Travis CI: ![testing](https://travis-ci.com/lucasgcb/unitTesting.svg?branch=master)
+
+[![Coverage Status](https://coveralls.io/repos/github/lucasgcb/unitTesting/badge.svg?branch=master)](https://coveralls.io/github/lucasgcb/unitTesting?branch=master)
+## About
+
+A simple unit test suite for some basic functions.
+
+[mydivpack](https://github.com/lucasgcb/unitTesting/tree/master/mydivpack) and [mysumpack](https://github.com/lucasgcb/unitTesting/tree/master/mysumpack) contain some generic code for adding and dividing lists of numbers. These can be used for anything.
+
+[tests](https://github.com/lucasgcb/unitTesting/tree/master/tests) have a few _unit test_ cases for the generic code. It is assumed that a value will always behave in a certain way, so the `pytest`suite will run the generic code against these defined cases. If the results deviate from what is expected, then the code is acting in an unexpected way and is thereby failing the build test.
+
+The tests may be run locally using `python -m pytest`.
+
+To automate this, Continuous Integration platforms such as [Circle CI](https://circleci.com/) and [Travis CI](https://travis-ci.org/) offers cloud environments for observing this repository and running the tests.
+
+[Coveralls](https://coveralls.io/) is a tool that lets us know how much of our code is Covered for tests. 
+
 
 ## About Testing
 

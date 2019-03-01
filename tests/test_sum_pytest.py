@@ -10,7 +10,7 @@ def test_list_int():
     """
     data = [1,2,3]
     result = sumFunction(data)
-    assert result == 6, "Should be 6"
+    assert result == 5, "Should be 5"
 
 def test_sum_tuple():
     data = (1,2,3)

@@ -13,7 +13,7 @@ jobs:
           command: pip install codecov && codecov -t $CODECOV_TOKEN
       - run:
           name: Run test Suite
-          command: pytest --cov=unittesting ./test-reports
+          command: pytest --cov=./ ./test-reports
       - store_test_results:
                 path: test-reports
       - store_artifacts:

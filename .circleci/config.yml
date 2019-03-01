@@ -9,5 +9,15 @@ jobs:
           name: Install Testing Env
           command: pip install pytest
       - run:
+          name: Install Test Reporter
+          command: pip install codecov
+      - run:
           name: Run test Suite
-          command: python -m pytest
+          command: python -m pytest --cov=./
+      - store_test_results:
+                path: test-reports
+            - store_artifacts:
+                path: test-reports   
+      - run:
+          name: Report Tests
+          command: codecov

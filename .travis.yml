@@ -1,2 +1,6 @@
 language: python
+install:
+  - pip install python-coveralls
 script: pytest
+after_success:
+  - coveralls

@@ -10,14 +10,14 @@ jobs:
           command: mkdir test-reports && pip install pytest pytest-cov
       - run:
           name: Install Test Reporter
-          command: pip install codecov && codecov -t $CODECOV_TOKEN
+          command: pip install codecov
       - run:
           name: Run test Suite
-          command: pytest --cov=./ ./test-reports
+          command: pytest --cov=./
       - store_test_results:
                 path: test-reports
       - store_artifacts:
                 path: test-reports   
       - run:
           name: Report Tests
-          command: codecov
+          command: codecov -t $CODECOV_TOKEN

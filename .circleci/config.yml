@@ -13,7 +13,7 @@ jobs:
           command: pip install codecov
       - run:
           name: Run test Suite
-          command: python -m pytest --cov=./
+          command: pytest --cov=./
       - store_test_results:
                 path: test-reports
       - store_artifacts:

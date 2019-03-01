@@ -16,7 +16,7 @@ jobs:
           command: python -m pytest --cov=./
       - store_test_results:
                 path: test-reports
-            - store_artifacts:
+      - store_artifacts:
                 path: test-reports   
       - run:
           name: Report Tests
